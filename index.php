@@ -110,6 +110,39 @@
 }
 
 
+
+
+
+.project-gallery {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.block-20 {
+    width: 35%; 
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    height: 200px; 
+    margin: 5px -70px;
+    transition: transform 0.3s ease;
+	right: -100px;
+}
+
+.block-20:hover {
+    transform: scale(1.05);
+}
+
+.prtext{
+	color: black;
+}
+
+
+
+
+
+
 </style>
 
 
@@ -130,7 +163,10 @@
 	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
 	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
 	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
-	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	          <!-- <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li> -->
+	          <li class="nav-item"><a href="contact.html" class="nav-link"><span>Contact</span></a></li>
+
+
 	        </ul>
 	      </div>
 	    </div>
@@ -141,7 +177,7 @@
 	      	<div class="overlay"></div>
 	         <div class="container">
 	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/ravi4.png);">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/ravi44.png);">
 	          	 <div class="overlay"></div>
 	          	</div>
 		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
@@ -411,139 +447,41 @@
     </section>
 
    
-
-    <section class="ftco-section" id="project-section">
-      <div class="container">
-        <div class="row justify-content-center mb-5 pb-5">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-            <!-- <h1 class="big big-2">Projects</h1> -->
-            <h2 class="mb-4">Projects</h2>
-            <p>Below are the sample Data Analytics projects on SQL, Python, Power BI & ML.</p>
-          </div>
-        </div>
-        <div class="row d-flex">
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry justify-content-end">
-              <a href="https://github.com/rishabhnmishra/SQL_Music_Store_Analysis/blob/main/Music_Store_Query.sql" class="block-20 zoom-effect" style="background-image: url('images/proj_1.jpg');">
-              </a>
-              <div class="text mt-3 float-right d-block">
-
-                <h3 class="heading"><a href="https://github.com/rishabhnmishra/SQL_Music_Store_Analysis/blob/main/Music_Store_Query.sql">Digital Music Store Data Analysis using SQL</a></h3>
-                <p>Analyzed music store data using advanced SQL queires to identify gaps and increase the business growth.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry justify-content-end">
-              <a href="https://github.com/rishabhnmishra/Python_Diwali_Sales_Analysis/blob/main/Diwali_Sales_Analysis.ipynb" class="block-20 zoom-effect" style="background-image: url('images/proj_2.jpg');">
-              </a>
-              <div class="text mt-3 float-right d-block">
-
-                <h3 class="heading"><a href="https://github.com/rishabhnmishra/Python_Diwali_Sales_Analysis/blob/main/Diwali_Sales_Analysis.ipynb">Data Analysis using Python Project for Beginners</a></h3>
-                <p>Performed exploratory data analysis on diwali sales data using Python to improve the customer experience.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry">
-              <a href="https://github.com/rishabhnmishra/Madhav_Store_Analysis_PowerBI/blob/main/Madhav%20Store%20dashboard.jpg" class="block-20 zoom-effect" style="background-image: url('images/proj_3.jpg');">
-              </a>
-              <div class="text mt-3 float-right d-block">
-
-                <h3 class="heading"><a href="https://github.com/rishabhnmishra/Madhav_Store_Analysis_PowerBI/blob/main/Madhav%20Store%20dashboard.jpg">Power BI Sales dashboard Project for Beginners</a></h3>
-                <p>Designed a power bi dashboard for Madhav Store to track and analyze the online sales data acorss India.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-	<br>
-		<!-- added justify-content-center to center align the last two projects -->
-		<div class="row d-flex justify-content-center">  
-			<div class="col-md-4 d-flex ftco-animate">
-				<div class="blog-entry justify-content-end">
-				<a href="https://github.com/rishabhnmishra/sales_forecasting/tree/main" class="block-20 zoom-effect" style="background-image: url('images/proj_4.jpg');">
-				</a>
-				<div class="text mt-3 float-right d-block">
-  
-				  <h3 class="heading"><a href="https://github.com/rishabhnmishra/sales_forecasting/tree/main">Sales Forecast- Time Series Forecasting</a></h3>
-				  <p>Used multiple machine learning models to forecast sales (retail store) and performed time series analysis.</p>
+	<section class="ftco-section" id="project-section">
+		<div class="container">
+		  <div class="row justify-content-center mb-5 pb-5">
+			<div class="col-md-7 heading-section text-center ftco-animate">
+			  <h2 class="mb-4">Projects</h2>
+			  <p>Below are the sample data from a responsive food ordering website built with HTML,
+				 CSS, PHP & MySQL.</p>
+			</div>
+		  </div>
+		  <div class="row d-flex">
+			<div class="col-md-12 d-flex ftco-animate">
+			  <div class="blog-entry justify-content-end">
+				<div class="project-gallery d-flex justify-content-between">
+				  <div class="block-20 zoom-effect" style="background-image: url('images/project1.png');"></div>
+				  <div class="block-20 zoom-effect" style="background-image: url('images/project3.png');"></div>
+				  <div class="block-20 zoom-effect" style="background-image: url('images/project9.png');"></div>
 				</div>
+				<div class="text mt-3 float-right d-block">
+				  <p class="prtext">Analyzed music store data using advanced SQL queries to identify gaps and increase the business growth.</p>
+				  <div class="project-gallery d-flex justify-content-between">
+				 
+				  <div class="block-20 zoom-effect" style="background-image: url('images/project5.png');"></div>
+				  <div class="block-20 zoom-effect" style="background-image: url('images/project4.png');"></div>
+				  <div" class="block-20 zoom-effect" style="background-image: url('images/project7.png');"></div>
+				   </div>
+				</div>
+
+		
+				
 			  </div>
 			</div>
-			<div class="col-md-4 d-flex ftco-animate">
-				<div class="blog-entry justify-content-end">
-				<a href="https://github.com/rishabhnmishra/customer_segmentation/blob/main/Customer_Segmentation-final.ipynb" class="block-20 zoom-effect" style="background-image: url('images/proj_5.jpg');">
-				</a>
-				<div class="text mt-3 float-right d-block">
-  
-				  <h3 class="heading"><a href="https://github.com/rishabhnmishra/customer_segmentation/blob/main/Customer_Segmentation-final.ipynb">Customer Segmentation using clustering model</a></h3>
-				  <p>Developed a ML model to give various recommendations of financial products &amp; services on target customer groups.</p>
-				</div>
-			  </div>
-			</div>
-		 </div>
-	  </div>
-    </section>
-
-	<!-- <section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
-      <div class="container">
-		<div class="row d-md-flex align-items-center">
-          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18">
-              <div class="text">
-                <strong class="number" data-number="20">0</strong>
-                <span>Achievements</span>
-				<ul>
-					<li>Secured AIR 63 in the MCA Entrance Exam at Babasaheb Bhimrao Ambedkar University, Lucknow.</li>
-					<li>Secured AIR 252 in the MCA Entrance Exam at Abdul Kalam Technical University, Lucknow.</li>
-					<li>Secured AIR 292 in the MCA Entrance Exam at Banaras Hindu University, Varanasi.</li>
-						
-				    
-			</ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18">
-              <div class="text">
-                <strong class="number" data-number="30">0</strong>
-                <span>Projects</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18">
-              <div class="text">
-                <strong class="number" data-number="1000">0</strong>
-                <span>Mentored Students</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18">
-              <div class="text">
-                <strong class="number" data-number="500">0</strong>
-                <span>Cups of coffee</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-	
-	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
-			
-				<div class="row justify-content-center">
-					<div class="col-md-7 ftco-animate text-center">
-						<h2>More projects on<span> Github  </span> </h2>
-						<div class="heading"> <h4> I love to solve business problems &amp; uncover hidden data stories </h4>
-						<br>
-						<p><a href="https://github.com/ravishankarpal" class="btn btn-primary py-3 px-5">GitHub</a></p>
-						</div>
-					</div>
-				</div>
-			
-		</div>
-	</section> -->
+		  </div>
+	  		</div>
+	  </section>
+	  
 
 
 
@@ -576,8 +514,7 @@
 				<div class="text">
 				  <div class="row">
 					<h1 class="big-4">Achievements</h1>
-					<!-- <div class="underline" style="width: 100%; height: 2px; background-color: #000; margin: 10px 0;"></div> -->
-					<div class="underline" style="width: 100%; height: 2px; background-color: #333; margin: 10px 0;"></div>
+					<div class="underline" style="width: 100%; height: 2px; background-color: #000; margin: 10px 0;"></div>
 
 				  </div>
 				  <ul style="display: flex; flex-wrap: wrap; list-style: none; padding: 0; margin: 0;">
@@ -649,7 +586,13 @@
 			<br>
 			<div class="row justify-content-center">
 				<div class="col-md-7 ftco-animate text-center">
-					<h2>Have a<span> Question?  </span> <a href="https://docs.google.com/forms/d/1xSL8dDYl4mjl5-bE17CYCrw7YKKHa7WjF6CzHDnPcG0" class="btn btn-primary py-3 px-5">Click Here</a> </h2>
+					<h2>Have a<span> Question?  </span>
+
+						<?php 
+						include 'contact.php';
+						?> Click Here
+						 <!-- <a href="contact.html" class="btn btn-primary py-3 px-5">Click Here</a> -->
+					</h2>
 				</div>
 			</div>
 				
