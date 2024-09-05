@@ -587,8 +587,12 @@
 			<div class="row justify-content-center">
 				<div class="col-md-7 ftco-animate text-center">
 					<h2>Have a<span> Question?  </span>
-						 <a href="contact.html" class="btn btn-primary py-3 px-5">Click Here</a>
-						</h2>
+
+						<?php 
+						include 'contact.php';
+						?> Click Here
+						 <!-- <a href="contact.html" class="btn btn-primary py-3 px-5">Click Here</a> -->
+					</h2>
 				</div>
 			</div>
 				

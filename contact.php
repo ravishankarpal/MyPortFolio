@@ -71,58 +71,60 @@
 
     <div class="contact-form">
         <h2>Contact Us</h2>
-        <!-- <form action="contact.php" method="POST">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-            <input type="submit" name="submit" value="Send Message">
-        </form> -->
+        <?php
+        // Initialize the message variables
+        $success_message = '';
+        $error_message = '';
 
+        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+            // Get form data
+            $name = htmlspecialchars($_POST['name']);
+            $email = htmlspecialchars($_POST['email']);
+            $message = htmlspecialchars($_POST['message']);
 
-        <form action="send_message.php" method="post">
+            // Email details
+            $to = 'rshankarpl96@gmail.com';
+            $subject = "$name wants to connect with you";
+            $body = "You have received a new message from your website contact form.\n\n".
+                    "Here are the details:\n\n".
+                    "Name: $name\n".
+                    "Email: $email\n".
+                    "Message:\n$message";
+            $headers = "From: $email\r\n";
+            $headers .= "Reply-To: $email\r\n";
+
+            // Send the email
+            if (mail($to, $subject, $body, $headers)) {
+                $success_message = "Message sent successfully!";
+            } else {
+                $error_message = "Failed to send message. Please try again.";
+            }
+        }
+        ?>
+        <form action="" method="post">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required><br>
-        
+
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required><br>
-        
+
             <label for="message">Message:</label>
             <textarea id="message" name="message" required></textarea><br>
-        
+
             <input type="submit" value="Send Message">
         </form>
 
-        
+        <?php
+        // Display success or error message
+        if (!empty($success_message)) {
+            echo '<div class="success-message">' . $success_message . '</div>';
+        }
 
+        if (!empty($error_message)) {
+            echo '<div class="error-message">' . $error_message . '</div>';
+        }
+        ?>
     </div>
-
-    <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Get form data
-    $name = htmlspecialchars($_POST['name']);
-    $email = htmlspecialchars($_POST['email']);
-    $message = htmlspecialchars($_POST['message']);
-
-    // Email details
-    $to = 'rshankarpl96@gmail.com';
-    $subject = "Name wants to connect with you";
-    $body = "You have received a new message from your website contact form.\n\n".
-            "Here are the details:\n\n".
-            "Name: $name\n".
-            "Email: $email\n".
-            "Message:\n$message";
-    $headers = "From: $email\r\n";
-    $headers .= "Reply-To: $email\r\n";
-
-    // Send the email
-    if (mail($to, $subject, $body, $headers)) {
-        echo "Message sent successfully!";
-    } else {
-        echo "Failed to send message. Please try again.";
-    }
-}
-?>
-
 
 </body>
 </html>
