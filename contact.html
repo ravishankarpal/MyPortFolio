@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212; /* Dark background */
+            color: #f4f4f4; /* Light text color */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .contact-form {
+            background-color: #1e1e1e; /* Slightly lighter dark background for form */
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            width: 400px;
+        }
+
+        .contact-form h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #ffffff; /* White heading color */
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #333; /* Dark border */
+            border-radius: 5px;
+            background-color: #2a2a2a; /* Dark background for inputs */
+            color: #ffffff; /* Light text for inputs */
+        }
+
+        .contact-form input[type="submit"] {
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        .contact-form input[type="submit"]:hover {
+            background-color: #218838;
+        }
+
+        .contact-form .success-message,
+        .contact-form .error-message {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .success-message {
+            color: #28a745;
+        }
+
+        .error-message {
+            color: #dc3545;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contact-form">
+        <h2>Contact Us</h2>
+        <!-- <form action="contact.php" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <input type="submit" name="submit" value="Send Message">
+        </form> -->
+
+
+        <form action="send_message.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+        
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+        
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea><br>
+        
+            <input type="submit" value="Send Message">
+        </form>
+
+        
+
+    </div>
+
+    <?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Get form data
+    $name = htmlspecialchars($_POST['name']);
+    $email = htmlspecialchars($_POST['email']);
+    $message = htmlspecialchars($_POST['message']);
+
+    // Email details
+    $to = 'rshankarpl96@gmail.com';
+    $subject = "Name wants to connect with you";
+    $body = "You have received a new message from your website contact form.\n\n".
+            "Here are the details:\n\n".
+            "Name: $name\n".
+            "Email: $email\n".
+            "Message:\n$message";
+    $headers = "From: $email\r\n";
+    $headers .= "Reply-To: $email\r\n";
+
+    // Send the email
+    if (mail($to, $subject, $body, $headers)) {
+        echo "Message sent successfully!";
+    } else {
+        echo "Failed to send message. Please try again.";
+    }
+}
+?>
+
+
+</body>
+</html>
