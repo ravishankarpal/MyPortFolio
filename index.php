@@ -156,7 +156,7 @@
 	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
 	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
 	          <!-- <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li> -->
-	          <li class="nav-item"><a href="contact.php" class="nav-link"><span>Contact</span></a></li>
+	          <li class="nav-item"><a href="contact.html" class="nav-link"><span>Contact</span></a></li>
 
 
 	        </ul>
@@ -524,7 +524,7 @@
 			<div class="row justify-content-center">
 				<div class="col-md-7 ftco-animate text-center">
 					<h2>Have a<span> Question?  </span>
-					<a href="contact.php" class="btn btn-primary py-3 px-5">Click Here</a> 
+					<a href="contact.html" class="btn btn-primary py-3 px-5">Click Here</a> 
 					</h2>
 				</div>
 			</div>
