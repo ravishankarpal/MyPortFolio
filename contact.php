@@ -122,18 +122,77 @@
             require 'src/SMTP.php';
             $mail = new PHPMailer(true);
             try {
-                $mail->isSMTP();                                            
-                $mail->Host = 'smtp.gmail.com';                     
-                $mail->SMTPAuth = true;                                   
-                $mail->Username = 'ravishankarportfolio@gmail.com';                     
-                $mail->Password = 'rbbw xjdc gkji mavw';                               
-                $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            
-                $mail->Port = 465;                                    
+                $mail->isSMTP();
+                $mail->Host = 'smtp.gmail.com';
+                $mail->SMTPAuth = true;
+                $mail->Username = 'ravishankarportfolio@gmail.com';
+                $mail->Password = 'rbbw xjdc gkji mavw';
+                $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
+                $mail->Port = 465;
                 $mail->setFrom('ravishankarportfolio@gmail.com', 'My Port Folio');
-                $mail->addAddress('rshankarpl96@gmail.com', 'Conatct Form');    
-                $mail->isHTML(true);                                 
+                $mail->addAddress('rshankarpl96@gmail.com', 'Conatct Form');
+                $mail->isHTML(true);
                 $mail->Subject = 'Port Folio Enqiry';
-                $mail->Body = "Sender Name- $name <br> Sender Email - $email <br> message- $message";
+
+                // Create a variable for the email body
+                $emailBody = "
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+        .container {
+            padding: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            border-radius: 10px 10px 0 0;
+        }
+        .content {
+            padding: 20px;
+            background-color: white;
+            border-radius: 0 0 10px 10px;
+        }
+        .content p {
+            margin: 10px 0;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        .content strong {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class='container'>
+        <div class='header'>
+            <h2>New Contact Form Submission</h2>
+        </div>
+        <div class='content'>
+            <p><strong>Sender Name:</strong> $name</p>
+            <p><strong>Sender Email:</strong> $email</p>
+            <p><strong>Message:</strong></p>
+            <p>$message</p>
+        </div>
+    </div>
+</body>
+</html>
+";
+
+
+
+                $mail->Body = $mail->Body = $emailBody;
                 $mail->send();
                 echo "<div class = 'success' id = 'successMessage'> Message has been sent</div>";
             } catch (Exception $e) {
