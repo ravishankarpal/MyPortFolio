@@ -126,7 +126,7 @@
                 $mail->Host = 'smtp.gmail.com';
                 $mail->SMTPAuth = true;
                 $mail->Username = 'ravishankarportfolio@gmail.com';
-                $mail->Password = 'rbbw xjdc gkji mavw';
+                $mail->Password = '';
                 $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
                 $mail->Port = 465;
                 $mail->setFrom('ravishankarportfolio@gmail.com', 'My Port Folio');
