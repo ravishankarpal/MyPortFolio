@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<!-- saved from url=(0044)http://localhost/Portfolio-Website-Template/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Ravi Shankar Pal Portfolio</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="./index_files/css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./index_files/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="./index_files/animate.css">
+    
+    <link rel="stylesheet" href="./index_files/owl.carousel.min.css">
+    <link rel="stylesheet" href="./index_files/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./index_files/magnific-popup.css">
+
+    <link rel="stylesheet" href="./index_files/aos.css">
+
+    <link rel="stylesheet" href="./index_files/ionicons.min.css">
+    
+    <link rel="stylesheet" href="./index_files/flaticon.css">
+    <link rel="stylesheet" href="./index_files/icomoon.css">
+    <link rel="stylesheet" href="./index_files/style.css">
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+
+
+
+.project-gallery {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.block-20 {
+    width: 35%; 
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    height: 200px; 
+    margin: 5px -70px;
+    transition: transform 0.3s ease;
+	right: -100px;
+}
+
+.block-20:hover {
+    transform: scale(1.05);
+}
+
+.prtext{
+	color: black;
+}
+
+</style>
+
+  <style type="text/css">.scrollax-performance, .scrollax-performance *, .scrollax-performance *:before, .scrollax-performance *:after { pointer-events: none !important; -webkit-animation-play-state: paused !important; animation-play-state: paused !important; };</style></head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300" data-aos-easing="slide" data-aos-duration="800" data-aos-delay="0">
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="http://localhost/Portfolio-Website-Template/index.html">Ravi Shankar Pal</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="http://localhost/Portfolio-Website-Template/#home-section" class="nav-link active"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="http://localhost/Portfolio-Website-Template/#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="http://localhost/Portfolio-Website-Template/#resume-section" class="nav-link"><span>Resume</span></a></li>
+	          <li class="nav-item"><a href="http://localhost/Portfolio-Website-Template/#project-section" class="nav-link"><span>Projects</span></a></li>
+	          <!-- <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li> -->
+	          <li class="nav-item"><a href="http://localhost/Portfolio-Website-Template/contact.php" class="nav-link"><span>Contact</span></a></li>
+
+
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider owl-carousel owl-loaded owl-drag">
+	       
+		<div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-2526px, 0px, 0px); transition: all; width: 6317px;"><div class="owl-item cloned" style="width: 1263.33px;"><div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image: url(&quot;images/ravi_main.jpg&quot;); height: 551px;">
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex align-items-center ftco-animate fadeInUp ftco-animated" data-scrollax=" properties: { translateY: &#39;70%&#39; }">
+		          	<div class="text">
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>Ravi Shankar Pal</span></h1>
+
+					
+						<span id="typing-animation">S</span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Software Developer'
+						];
+
+						
+						function playTypingAnimation(text) {
+						
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); 
+						}
+
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+			    
+			            <p>
+						<a href="https://github.com/ravishankarpal" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div></div><div class="owl-item cloned" style="width: 1263.33px;"><div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image: url(&quot;images/ravi_main.jpg&quot;); height: 551px;">
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex align-items-center ftco-animate fadeInUp ftco-animated" data-scrollax=" properties: { translateY: &#39;70%&#39; }">
+		          	<div class="text">
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>Ravi Shankar Pal</span></h1>
+
+					
+						<span id="typing-animation">S</span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Software Developer'
+						];
+
+						
+						function playTypingAnimation(text) {
+						
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); 
+						}
+
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+			    
+			            <p>
+						<a href="https://github.com/ravishankarpal" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div></div><div class="owl-item active" style="width: 1263.33px;"><div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image: url(&quot;images/ravi_main.jpg&quot;); height: 551px;">
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex align-items-center ftco-animate fadeInUp ftco-animated" data-scrollax=" properties: { translateY: &#39;70%&#39; }" style="transform: translateZ(0px) translateY(0%);">
+		          	<div class="text">
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>Ravi Shankar Pal</span></h1>
+
+					
+						<span id="typing-animation">Soft</span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Software Developer'
+						];
+
+						
+						function playTypingAnimation(text) {
+						
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); 
+						}
+
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+			    
+			            <p>
+						<a href="https://github.com/ravishankarpal" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div></div><div class="owl-item cloned" style="width: 1263.33px;"><div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image: url(&quot;images/ravi_main.jpg&quot;); height: 551px;">
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex align-items-center ftco-animate fadeInUp ftco-animated" data-scrollax=" properties: { translateY: &#39;70%&#39; }">
+		          	<div class="text">
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>Ravi Shankar Pal</span></h1>
+
+					
+						<span id="typing-animation">S</span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Software Developer'
+						];
+
+						
+						function playTypingAnimation(text) {
+						
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); 
+						}
+
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+			    
+			            <p>
+						<a href="https://github.com/ravishankarpal" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div></div><div class="owl-item cloned" style="width: 1263.33px;"><div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image: url(&quot;images/ravi_main.jpg&quot;); height: 551px;">
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex align-items-center ftco-animate fadeInUp ftco-animated" data-scrollax=" properties: { translateY: &#39;70%&#39; }">
+		          	<div class="text">
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>Ravi Shankar Pal</span></h1>
+
+					
+						<span id="typing-animation">S</span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Software Developer'
+						];
+
+						
+						function playTypingAnimation(text) {
+						
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); 
+						}
+
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+			    
+			            <p>
+						<a href="https://github.com/ravishankarpal" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div></div></div></div><div class="owl-nav disabled"><button role="presentation" class="owl-prev"><span class="ion-md-arrow-back"></span></button><button role="presentation" class="owl-next"><span class="ion-chevron-right"></span></button></div><div class="owl-dots disabled"><button class="owl-dot active"><span></span></button></div></div>
+    </section>
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+									  <div class="about-img">
+										<img src="./index_files/ravi_about2.png" class="img-fluid rounded b-shadow-a" alt="">
+									  </div>
+									</div>
+									<!-- Details next to profile imag2 -->
+									<div class="col-sm-6 col-md-7">
+									  <div class="about-info">
+										<p><span class="title-s">Name: </span> <span>Ravi Shankar Pal</span></p>
+										<p><span class="title-s">Job Role: </span> <span>Software Engineer</span></p>
+										<p><span class="title-s">Experience: </span> <span>2 Years 2 Months</span></p>
+										<p><span class="title-s">Address: </span> <span>Gurugram, India</span></p>
+									  </div>
+									</div>
+								  </div>
+
+								<div class="skill-mf">
+									<p class="title-s">Skills</p>
+									<span>Java</span>
+									 <!-- <span class="pull-right">95%</span> -->
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+
+									<span>SQL</span> 
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+
+									<span>Analysis</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+									
+									<span>Rest APIs</span> 
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate fadeInUp ftco-animated">
+								<h2 class="mb-4">About me</h2>
+								<p>With over 2 years of hands-on experience in Java development,
+									I am a dedicated Software Developer specializing in backend engineering,
+									passionate about crafting robust, scalable, and efficient server-side solutions.
+									My expertise lies in designing and implementing complex backend systems that power
+									 modern web applications and services.</p>
+								<ul class="about-info mt-4 px-md-0 px-2">
+									<li class="d-flex"><span>Profile:</span> <span>Software Developer</span></li>
+									<li class="d-flex"><span>Domain:</span> <span>Backend</span></li>
+									<li class="d-flex"><span>Education:</span> <span>Master of Computer Application &amp; Bachelor of Science(Mathematics)</span></li>
+									<li class="d-flex"><span>Language:</span> <span>English, Hindi</span></li>
+									<li class="d-flex"><span>Programming Language:</span> <span>Java &amp; Python</span></li>
+									<li class="d-flex"><span>Framework:</span> <span>Spring Boot &amp; Rest</span></li>
+									<li class="d-flex"><span>Technical Skilss:</span> <span>Data Structure &amp; Algorithms,
+										Problem Solving, Redis &amp; Kafka</span></li>
+
+									<li class="d-flex"><span>Database:</span> <span>MySQL &amp; Snowflake</span></li>
+									<li class="d-flex"><span>Tools:</span> <span>Git &amp; Jenkins</span></li>
+
+									<li class="d-flex"><span>Interest:</span> <span>Traveling, Travel Photography, Teaching</span></li>
+									
+								</ul>
+							</div>
+						</div>
+
+
+						<div class="counter-wrap ftco-animate d-flex mt-md-3 fadeInUp ftco-animated">
+							<div class="text">
+								<p><a href="https://www.linkedin.com/in/ravi-shankar-pal-078333192/" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>	
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate fadeInUp ftco-animated">
+          	
+            <h2 class="mb-4">Resume</h2>
+            <p>Dedicated Software Developer with 2+ years of experience specializing in backend development.
+				Proficient in designing and implementing robust server-side applications and RESTful APIs. 
+				Skilled in Java, database management, and software architecture. Committed to writing efficient,
+				scalable code and continuously improving development practices to drive high-performance backend
+				solutions.</p>
+          </div>
+        </div>
+
+		<div class="row">
+			<h1 class="big-4">Experience</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+		<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate fadeInUp ftco-animated">
+						<span class="date">Jan 2022 - June 2022</span>
+						<h2>Software Developer Intern</h2>
+						<span class="position">Vinculum Solutions</span>
+						<p class="mt-4">Vinculum Solutions, a global leader in omnichannel retail technology, providing SaaS solutions for e-commerce and supply
+							 chain management to empower businesses worldwides.
+							</p><ul>
+								<li>Developed and maintained inventory features under the guidance of the team lead and senior developers.</li>
+								<li>Participated in the software development life cycle, including coding, testing, and deployment on dev environments.</li>
+								<li>Contributed by 10% decrease in bug reports by participating in the software development.</li>
+							</ul>
+						<p></p>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate fadeInUp ftco-animated">
+						<span class="date">July 2022 - Present</span>
+						<h2>Software Backend Engineer</h2>
+						<span class="position">Birdeye</span>
+						<p class="mt-4">Birdeye, a leading customer experience and reputation management platform with a global presence.
+							It's an innovative SaaS company serving businesses across various industries.
+							</p><ul>
+								<li>Optimized daily sync jobs and ensured seamless integration with Salesforce data updates, resulting by 30%
+									improvement in overall job completion time.</li>
+								<li>Developed a real-time alert system to keep top management updated on client software purchases, boosting
+									communication and responsiveness.</li>
+								<li>Resolved data discrepancies for over 150,000 partners across company dashboards and Salesforce, ensuring
+									data integrity, resulting increased reliability by 40%.</li>
+								<li>Optimized database queries and implemented caching strategies, achieved by 40% reduction in application response
+									time.</li>	
+								<li>Developing and maintaining backend systems for a large enterprise platform.</li>	
+								<li>Conducted thorough testing and debugging of production issues, reducing bug reports by 40% and ensuring smooth
+									operation of backend systems.</li>
+							</ul>
+						<p></p>
+					</div>
+
+				</div>
+			</div>
+
+		<br>
+		<br>
+
+		<div class="row">
+			<h1 class="big-4">Education</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+			<div class="row">
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate fadeInUp ftco-animated">
+    					<span class="date">2019-2022</span>
+    					<h2>Master of Computer Applications</h2>
+    					<span class="position">Banaras Hindu University, Varanasi</span>
+    					<!-- <p class="mt-4">Grade: First class.</p> -->
+    				</div>
+    			</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate fadeInUp ftco-animated">
+    					<span class="date">2014-2017</span>
+    					<h2>Bachelor of Science(Mathematics)</h2>
+    					<span class="position">Dr. Ram Manohar Lohia Awadh University, Ayodhya</span>
+    					<!-- <p class="mt-4">Grade: Second class.</p> -->
+    				</div>
+				</div>
+    		</div>
+
+    		<div class="row justify-content-center mt-5">
+    			<div class="col-md-6 text-center ftco-animate fadeInUp ftco-animated">
+    				<p><a href="https://drive.google.com/uc?export=download&amp;id=1atfDX4pfFXqRFAdKz9HsmhwL5VcIu5_A" class="btn btn-primary py-4 px-5">Download Resume</a></p>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+   
+	<section class="ftco-section" id="project-section">
+		<div class="container">
+		  <div class="row justify-content-center mb-5 pb-5">
+			<div class="col-md-7 heading-section text-center ftco-animate fadeInUp ftco-animated">
+			  <h2 class="mb-4">Projects</h2>
+			  <p>Below are the sample data from a responsive food ordering website built with HTML,
+				 CSS, PHP &amp; MySQL.</p>
+			</div>
+		  </div>
+		  <div class="row d-flex">
+			<div class="col-md-12 d-flex ftco-animate fadeInUp ftco-animated">
+			  <div class="blog-entry justify-content-end">
+				<div class="project-gallery d-flex justify-content-between">
+				  <div class="block-20 zoom-effect" style="background-image: url(&#39;images/project1.png&#39;);"></div>
+				  <div class="block-20 zoom-effect" style="background-image: url(&#39;images/project3.png&#39;);"></div>
+				  <div class="block-20 zoom-effect" style="background-image: url(&#39;images/project9.png&#39;);"></div>
+				</div>
+				<div class="text mt-3 float-right d-block">
+				  <p class="prtext">Analyzed music store data using advanced SQL queries to identify gaps and increase the business growth.</p>
+				  <div class="project-gallery d-flex justify-content-between">
+				 
+				  <div class="block-20 zoom-effect" style="background-image: url(&#39;images/project5.png&#39;);"></div>
+				  <div class="block-20 zoom-effect" style="background-image: url(&#39;images/project4.png&#39;);"></div>
+				  <div" class="block-20 zoom-effect" style="background-image: url(&#39;images/project7.png&#39;);"></div"></div>
+				   </div>
+				</div>
+
+		
+				
+			  </div>
+			</div>
+		  </div>
+	  		
+	  </section>
+	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+		<div class="container">
+		  <div class="row d-md-flex align-items-center">
+			<div class="col-md d-flex justify-content-center counter-wrap ftco-animate fadeInUp ftco-animated">
+			  <div class="block-18">
+				<div class="row">
+					<h1 class="big-4">Achievements</h1>
+					<div class="underline"></div>
+				</div>
+				  <ul style="display: flex; list-style: none; padding: 5;">
+					<li style="margin-right: 20px;">Secured AIR 63 in the MCA Entrance Exam at Babasaheb Bhimrao Ambedkar University, Lucknow.</li>
+					<li style="margin-right: 20px;">Secured AIR 252 in the MCA Entrance Exam at Abdul Kalam Technical University, Lucknow.</li>
+					<li>Secured AIR 292 in the MCA Entrance Exam at Banaras Hindu University, Varanasi.</li>
+				  </ul>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </section>
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate fadeInUp ftco-animated">
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate fadeInUp ftco-animated">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+          		<h3 class="mb-4">Address</h3>
+	            <p>Gurugram, India</p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate fadeInUp ftco-animated">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+          		<h3 class="mb-4">Contact Number</h3>
+	            <p><a href="tel://+918953275457">+918953275457</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate fadeInUp ftco-animated">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+	            <p><a href="mailto:ravishankarpl3@gmail.com">ravishankarpl3@gmail.com</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate fadeInUp ftco-animated">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-globe"></span>
+          		</div>
+          		<h3 class="mb-4">Download Resume</h3>
+	            <p><a href="https://drive.google.com/uc?export=download&amp;id=1atfDX4pfFXqRFAdKz9HsmhwL5VcIu5_A">resumelink</a></p>
+	          </div>
+          </div>
+
+		  <div class="container">
+			<br>
+			<br>
+			<div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center fadeInUp ftco-animated">
+					<h2>Have a<span> Question?  </span>
+					<a href="http://localhost/Portfolio-Website-Template/contact.php" class="btn btn-primary py-3 px-5">Click Here</a> 
+					</h2>
+				</div>
+			</div>
+				
+		   </div>
+   </div>
+ </div></section>
+
+	
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+  
+			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	Copyright ©<script>document.write(new Date().getFullYear());</script>2024 All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com/" target="_blank">Colorlib</a>
+	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"></circle><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"></circle></svg></div>
+
+
+  <script src="./index_files/jquery.min.js.download"></script>
+  <script src="./index_files/jquery-migrate-3.0.1.min.js.download"></script>
+  <script src="./index_files/popper.min.js.download"></script>
+  <script src="./index_files/bootstrap.min.js.download"></script>
+  <script src="./index_files/jquery.easing.1.3.js.download"></script>
+  <script src="./index_files/jquery.waypoints.min.js.download"></script>
+  <script src="./index_files/jquery.stellar.min.js.download"></script>
+  <script src="./index_files/owl.carousel.min.js.download"></script>
+  <script src="./index_files/jquery.magnific-popup.min.js.download"></script>
+  <script src="./index_files/aos.js.download"></script>
+  <script src="./index_files/jquery.animateNumber.min.js.download"></script>
+  <script src="./index_files/scrollax.min.js.download"></script>
+  
+  <script src="./index_files/main.js.download"></script>
+    
+  
+</body></html>
