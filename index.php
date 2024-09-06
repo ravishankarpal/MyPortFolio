@@ -138,18 +138,10 @@
 	color: black;
 }
 
-
-
-
-
-
 </style>
-
 
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-	  
-	  
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
 	    <div class="container">
 	      <a class="navbar-brand" href="index.html">Ravi Shankar Pal</a>
@@ -164,7 +156,7 @@
 	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
 	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
 	          <!-- <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li> -->
-	          <li class="nav-item"><a href="contact.html" class="nav-link"><span>Contact</span></a></li>
+	          <li class="nav-item"><a href="contact.php" class="nav-link"><span>Contact</span></a></li>
 
 
 	        </ul>
@@ -177,7 +169,7 @@
 	      	<div class="overlay"></div>
 	         <div class="container">
 	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/ravi44.png);">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/ravi_main.jpg);">
 	          	 <div class="overlay"></div>
 	          	</div>
 		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
@@ -198,23 +190,21 @@
 						'Software Developer'
 						];
 
-						// Create a function to display the typing animation for a given text
+						
 						function playTypingAnimation(text) {
-						// Loop through each character and add it to the element
+						
 						for (let i = 0; i < text.length; i++) {
 							setTimeout(() => {
 							typingAnimationElement.textContent += text[i];
-							}, i * 200); // Increase the delay to slow down the typing animation
+							}, i * 200); 
 						}
 
-						// Once the animation is complete, reset the text and start over
 						setTimeout(() => {
 							typingAnimationElement.textContent = '';
 							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
 						}, text.length * 200);
 						}
 
-						// Start the typing animation loop
 						playTypingAnimation(typingTexts[0]);
 
 						</script>
@@ -231,14 +221,10 @@
 	      </div>
 		</div>
     </section>
-
-
-
     <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
     	<div class="container">
 			<div class="row">
 				<div class="row d-flex align-items-stretch">
-				<!-- <div class="row d-flex"> -->
 					<div class="col-md-6 col-lg-5 d-flex">
 						<div class="img-about img d-flex align-items-stretch">
 							<div class="overlay">
@@ -261,35 +247,31 @@
 
 								<div class="skill-mf">
 									<p class="title-s">Skills</p>
-									<span>SQL</span> <span class="pull-right">95%</span>
+									<span>Java</span>
+									 <!-- <span class="pull-right">95%</span> -->
 									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0"
+										<div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="95" aria-valuemin="0"
 											aria-valuemax="100"></div>
 									</div>
-									
-									<span>PYTHON</span> <span class="pull-right">85%</span>
+
+									<span>SQL</span> 
 									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="90" aria-valuemin="0"
 											aria-valuemax="100"></div>
 									</div>
-									
-									<span>Data Visualization</span> <span class="pull-right">90%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>Statistical Analysis</span> <span class="pull-right">85%</span>
+
+									<span>Analysis</span>
 									<div class="progress">
 										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
 											aria-valuemax="100"></div>
 									</div>
 									
-									<span>Machine Learning</span> <span class="pull-right">80%</span>
+									<span>Rest APIs</span> 
 									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
+										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="85" aria-valuemin="0"
 											aria-valuemax="100"></div>
 									</div>
+									
 								</div>
 							</div>
 						</div>
@@ -298,10 +280,7 @@
 					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
 						<div class="row justify-content-start pb-3">
 							<div class="col-md-12 heading-section ftco-animate">
-								
-								
 								<h2 class="mb-4">About me</h2>
-								
 								<p>With over 2 years of hands-on experience in Java development,
 									I am a dedicated Software Developer specializing in backend engineering,
 									passionate about crafting robust, scalable, and efficient server-side solutions.
@@ -329,10 +308,6 @@
 
 						<div class="counter-wrap ftco-animate d-flex mt-md-3">
 							<div class="text">
-								<!-- <p class="mb-4">
-									<span class="number" data-number="30">0</span> <span>+</span>
-									<span>&nbsp; Projects completed</span>
-								</p> -->
 								<p><a href="https://www.linkedin.com/in/ravi-shankar-pal-078333192/" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
 							</div>
 						</div>
@@ -340,11 +315,7 @@
 				</div>
 			</div>
 		</div>
-    </section>
-
-
-
-	
+    </section>	
     <section class="ftco-section ftco-no-pb" id="resume-section">
     	<div class="container">
     		<div class="row justify-content-center pb-5">
@@ -481,10 +452,6 @@
 		  </div>
 	  		</div>
 	  </section>
-	  
-
-
-
 	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
 		<div class="container">
 		  <div class="row d-md-flex align-items-center">
@@ -494,7 +461,7 @@
 					<h1 class="big-4">Achievements</h1>
 					<div class="underline"></div>
 				</div>
-				  <ul style="display: flex; list-style: none; padding: 0;">
+				  <ul style="display: flex; list-style: none; padding: 5;">
 					<li style="margin-right: 20px;">Secured AIR 63 in the MCA Entrance Exam at Babasaheb Bhimrao Ambedkar University, Lucknow.</li>
 					<li style="margin-right: 20px;">Secured AIR 252 in the MCA Entrance Exam at Abdul Kalam Technical University, Lucknow.</li>
 					<li>Secured AIR 292 in the MCA Entrance Exam at Banaras Hindu University, Varanasi.</li>
@@ -504,40 +471,10 @@
 		  </div>
 		</div>
 	  </section>
-
-
-	  <section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
-		<div class="container">
-		  <div class="row d-md-flex align-items-center">
-			<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-			  <div class="block-18">
-				<div class="text">
-				  <div class="row">
-					<h1 class="big-4">Achievements</h1>
-					<div class="underline" style="width: 100%; height: 2px; background-color: #000; margin: 10px 0;"></div>
-
-				  </div>
-				  <ul style="display: flex; flex-wrap: wrap; list-style: none; padding: 0; margin: 0;">
-					<li style="margin-right: 20px; margin-bottom: 10px;">Secured AIR 63 in the MCA Entrance Exam at Babasaheb Bhimrao Ambedkar University, Lucknow.</li>
-					<li style="margin-right: 20px; margin-bottom: 10px;">Secured AIR 252 in the MCA Entrance Exam at Abdul Kalam Technical University, Lucknow.</li>
-					<li style="margin-bottom: 10px;">Secured AIR 292 in the MCA Entrance Exam at Banaras Hindu University, Varanasi.</li>
-				  </ul>
-				</div>
-			  </div>
-			</div>
-		  </div>
-		</div>
-	  </section>
-	  
-	  
-
-
-
     <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
       <div class="container">
       	<div class="row justify-content-center mb-5 pb-3">
           <div class="col-md-7 heading-section text-center ftco-animate">
-            <h1 class="big big-2">Contact</h1>
             <h2 class="mb-4">Contact Me</h2>
             <p>Below are the details to reach out to me!</p>
           </div>
@@ -596,8 +533,6 @@
    </div>
  </section>
 
-
- 
 	
     <footer class="ftco-footer ftco-section">
 		<div class="container">
